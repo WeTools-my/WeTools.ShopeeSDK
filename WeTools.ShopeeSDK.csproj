@@ -9,16 +9,9 @@
     <RepositoryUrl>https://github.com/WeTools-my/WeTools.ShopeeSDK</RepositoryUrl>
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <FileVersion>1.0.0</FileVersion>
-    <PackageIcon>WETOOLS.png</PackageIcon>
+    <PackageIcon>wetools.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Include="F:\Pictures\WETOOLS.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
@@ -27,6 +20,10 @@
 
   <ItemGroup>
     <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="wetools.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
