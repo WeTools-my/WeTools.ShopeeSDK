@@ -1,0 +1,9 @@
+E:\Git\Github\JohoHubWebBuilder\WeTools.Shopee\bin\Debug\netstandard2.1\WeTools.ShopeeSDK.deps.json
+E:\Git\Github\JohoHubWebBuilder\WeTools.Shopee\bin\Debug\netstandard2.1\WeTools.ShopeeSDK.dll
+E:\Git\Github\JohoHubWebBuilder\WeTools.Shopee\bin\Debug\netstandard2.1\WeTools.ShopeeSDK.pdb
+E:\Git\Github\JohoHubWebBuilder\WeTools.Shopee\obj\Debug\netstandard2.1\WeTools.ShopeeSDK.GeneratedMSBuildEditorConfig.editorconfig
+E:\Git\Github\JohoHubWebBuilder\WeTools.Shopee\obj\Debug\netstandard2.1\WeTools.ShopeeSDK.AssemblyInfoInputs.cache
+E:\Git\Github\JohoHubWebBuilder\WeTools.Shopee\obj\Debug\netstandard2.1\WeTools.ShopeeSDK.AssemblyInfo.cs
+E:\Git\Github\JohoHubWebBuilder\WeTools.Shopee\obj\Debug\netstandard2.1\WeTools.ShopeeSDK.csproj.CoreCompileInputs.cache
+E:\Git\Github\JohoHubWebBuilder\WeTools.Shopee\obj\Debug\netstandard2.1\WeTools.ShopeeSDK.dll
+E:\Git\Github\JohoHubWebBuilder\WeTools.Shopee\obj\Debug\netstandard2.1\WeTools.ShopeeSDK.pdb
