@@ -9,6 +9,7 @@
         private ShopeeShopAPI? _shop=null;
         private ShopeeProductAPI? _product=null;
         private ShopeeAuthAPI? _auth = null;
+        private ShopeeShopCategoryAPI? _shopCategory=null;
 
         public ShopeeAPIBasic? Basic { get; set; }
 
@@ -51,6 +52,21 @@
                 return _auth;
             }
             set => _auth = value;
+        }
+
+
+        public ShopeeShopCategoryAPI? ShopCategory
+        {
+            get
+            {
+                if (_shopCategory is null)
+                {
+                    _shopCategory = new ShopeeShopCategoryAPI(Basic);
+                }
+
+                return _shopCategory;
+            }
+            set => _shopCategory = value;
         }
 
     }
