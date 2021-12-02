@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Git\\Github\\JohoHubWebBuilder\\WeTools.Shopee\\WeTools.ShopeeSDK.csproj": {}
+    "E:\\Git\\Github\\WeTools.ShopeeSDK\\WeTools.ShopeeSDK.csproj": {}
   },
   "projects": {
-    "E:\\Git\\Github\\JohoHubWebBuilder\\WeTools.Shopee\\WeTools.ShopeeSDK.csproj": {
+    "E:\\Git\\Github\\WeTools.ShopeeSDK\\WeTools.ShopeeSDK.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Git\\Github\\JohoHubWebBuilder\\WeTools.Shopee\\WeTools.ShopeeSDK.csproj",
+        "projectUniqueName": "E:\\Git\\Github\\WeTools.ShopeeSDK\\WeTools.ShopeeSDK.csproj",
         "projectName": "WeTools.ShopeeSDK",
-        "projectPath": "E:\\Git\\Github\\JohoHubWebBuilder\\WeTools.Shopee\\WeTools.ShopeeSDK.csproj",
+        "projectPath": "E:\\Git\\Github\\WeTools.ShopeeSDK\\WeTools.ShopeeSDK.csproj",
         "packagesPath": "C:\\Users\\JohoHub\\.nuget\\packages\\",
-        "outputPath": "E:\\Git\\Github\\JohoHubWebBuilder\\WeTools.Shopee\\obj\\",
+        "outputPath": "E:\\Git\\Github\\WeTools.ShopeeSDK\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "d:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
