@@ -11,13 +11,16 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("WeTools.ShopeeSDK")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("clrsdream")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("copyright © 2021 clrsdream")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("Shopee API V2 SDK")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("WeTools.ShopeeSDK")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WeTools.ShopeeSDK")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/WeTools-my/WeTools.ShopeeSDK")]
 
 // 由 MSBuild WriteCodeFragment 类生成。
 

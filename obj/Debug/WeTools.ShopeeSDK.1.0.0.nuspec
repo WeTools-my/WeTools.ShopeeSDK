@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>WeTools.ShopeeSDK</id>
+    <version>1.0.0</version>
+    <authors>clrsdream</authors>
+    <description>Shopee API V2 SDK</description>
+    <copyright>copyright © 2021 clrsdream</copyright>
+    <repository url="https://github.com/WeTools-my/WeTools.ShopeeSDK" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="Newtonsoft.Json" version="13.0.1" exclude="Build,Analyzers" />
+        <dependency id="RestSharp" version="106.13.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="E:\Git\Github\WeTools.ShopeeSDK\bin\Debug\netstandard2.1\WeTools.ShopeeSDK.dll" target="lib\netstandard2.1\WeTools.ShopeeSDK.dll" />
+  </files>
+</package>
