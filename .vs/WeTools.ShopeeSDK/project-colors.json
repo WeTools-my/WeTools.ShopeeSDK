@@ -5,7 +5,12 @@
       "ProjectGuid": "02a8bb3d-1e9d-4d25-9f7d-f21467f68cfa",
       "DisplayName": "WeTools.ShopeeSDK",
       "ColorIndex": 0
+    },
+    "fac22911-fffb-4ee6-b8ff-f8855556ce10": {
+      "ProjectGuid": "fac22911-fffb-4ee6-b8ff-f8855556ce10",
+      "DisplayName": "JohoHubWebBuilder",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }

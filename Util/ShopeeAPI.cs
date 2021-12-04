@@ -11,6 +11,8 @@
         private ShopeeAuthAPI? _auth = null;
         private ShopeeShopCategoryAPI? _shopCategory=null;
 
+        private ShopeeOrderAPI? _order=null;
+
         public ShopeeAPIBasic? Basic { get; set; }
 
         public ShopeeShopAPI? Shop
@@ -67,6 +69,20 @@
                 return _shopCategory;
             }
             set => _shopCategory = value;
+        }
+
+        public ShopeeOrderAPI? Order
+        {
+            get
+            {
+                if (_order is null)
+                {
+                    _order = new ShopeeOrderAPI(Basic);
+                }
+
+                return _order;
+            }
+            set => _order = value;
         }
 
     }
