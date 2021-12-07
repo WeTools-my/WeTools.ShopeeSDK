@@ -15,21 +15,21 @@ namespace WeTools.ShopeeSDK.Model
         /// miao
         /// </summary>
         [JsonProperty(PropertyName = "expire_in")]
-        public string ExpireIn { get; set; }
+        public int ExpireIn { get; set; }
 
         [JsonProperty(PropertyName = "merchant_id_list")]
-        public List<int> MerchantIdList { get; set; }
+        public List<long> MerchantIdList { get; set; }
 
         [JsonProperty(PropertyName = "shop_id_list")]
-        public string ShopIdList { get; set; }
+        public List<long> ShopIdList { get; set; }
 
         [JsonProperty(PropertyName = "merchant_id")]
-        public List<int> MerchantId { get; set; }
+        public long MerchantId { get; set; }
 
         [JsonProperty(PropertyName = "shop_id")]
-        public string ShopId { get; set; }
+        public long ShopId { get; set; }
 
         [JsonProperty(PropertyName = "partner_id")]
-        public string PartnerId { get; set; }
+        public long PartnerId { get; set; }
     }
 }
