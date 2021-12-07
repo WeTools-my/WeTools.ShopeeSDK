@@ -223,5 +223,41 @@ namespace WeTools.ShopeeSDK.Util
 
             return ParseData<ShopeeProductUpdateStockModel>(resp);
         }
+
+        /// <summary>
+        /// Use this api to get comment by shop_id, item_id, or comment_id.
+        /// </summary>
+        /// <see href="https://open.shopee.com/documents?module=89&type=1&id=562&version=2">document</see>
+        /// <param name="page_size">Each result set is returned as a page of entries. Use the "page_size" filters to control the maximum number of entries to retrieve per page (i.e., per call). This integer value is used to specify the maximum number of entries to return in a single "page" of data. The limit of page_size if between 1 and 100.</param>
+        /// <param name="cursor">Specifies the starting entry of data to return in the current call. Default is "". If data is more than one page, the offset can be some entry to start next call.</param>
+        /// <param name="item_id">The identity of product item.</param>
+        /// <param name="comment_id">The identity of comment.</param>
+        /// <returns></returns>
+        public ShopeeProductCommentListModel GetComment(int page_size,string cursor="",long item_id=0,long comment_id=0)
+        {
+            string action = "get_comment";
+            var queryString = new StringBuilder();
+            queryString.AppendFormat("&access_token={0}&shop_id={1}&page_size={2}", _basic.AccessToken, _basic.ShopId, page_size);
+
+            if (!string.IsNullOrWhiteSpace(cursor))
+            {
+                queryString.AppendFormat("&cursor={0}", cursor);
+            }
+
+            if (item_id>0)
+            {
+                queryString.AppendFormat("&item_id={0}", item_id);
+            }
+
+            if (comment_id>0)
+            {
+                queryString.AppendFormat("&comment_id={0}", comment_id);
+            }
+
+            string url = GetRequestUrl(action, SignTypeEnum.Shop, queryString.ToString());
+            string resp = _basic.Web.DoGet(url);
+
+            return ParseData<ShopeeProductCommentListModel>(resp);
+        }
     }
 }
