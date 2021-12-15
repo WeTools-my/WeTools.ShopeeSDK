@@ -16,3 +16,4 @@ E:\Git\Github\WeTools.ShopeeSDK\obj\Debug\netstandard2.1\WeTools.ShopeeSDK.Assem
 E:\Git\Github\WeTools.ShopeeSDK\obj\Debug\netstandard2.1\WeTools.ShopeeSDK.csproj.CoreCompileInputs.cache
 E:\Git\Github\WeTools.ShopeeSDK\obj\Debug\netstandard2.1\WeTools.ShopeeSDK.dll
 E:\Git\Github\WeTools.ShopeeSDK\obj\Debug\netstandard2.1\WeTools.ShopeeSDK.pdb
+E:\Git\Github\WeTools.ShopeeSDK\obj\Debug\netstandard2.1\WeTools.ShopeeSDK.csproj.AssemblyReference.cache

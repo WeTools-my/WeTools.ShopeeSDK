@@ -7,7 +7,7 @@ namespace WeTools.ShopeeSDK.Model
     public class ShopeeProductItemModelImageModel
     {
         [JsonProperty("image_id")]
-        public long ImageId { get; set; }
+        public string ImageId { get; set; }
 
         [JsonProperty("image_url")]
         public string ImageUrl { get; set; }
