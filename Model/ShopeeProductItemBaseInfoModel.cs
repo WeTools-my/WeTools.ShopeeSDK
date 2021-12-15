@@ -12,7 +12,7 @@ namespace WeTools.ShopeeSDK.Model
         public List<string> ImageUrlList { get; set; }
 
         [JsonProperty("image_id_list")]
-        public List<long> ImageIdList { get; set; }
+        public List<string> ImageIdList { get; set; }
     }
 
     public class ShopeeProductItemBaseInfoDimensionModel
