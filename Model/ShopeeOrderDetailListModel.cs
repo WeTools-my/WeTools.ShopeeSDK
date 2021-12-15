@@ -16,7 +16,7 @@ namespace WeTools.ShopeeSDK.Model
     public class ShopeeOrderDetailItemModel
     {
         [JsonProperty("item_id")]
-        public int ItemId { get; set; }
+        public long ItemId { get; set; }
 
         [JsonProperty("item_name")]
         public string ItemName { get; set; }
@@ -25,7 +25,7 @@ namespace WeTools.ShopeeSDK.Model
         public string ItemSku { get; set; }
 
         [JsonProperty("model_id")]
-        public int ModelId { get; set; }
+        public long ModelId { get; set; }
 
         [JsonProperty("model_name")]
         public string ModelName { get; set; }
@@ -37,10 +37,10 @@ namespace WeTools.ShopeeSDK.Model
         public int ModelQuantityPurchased { get; set; }
 
         [JsonProperty("model_original_price")]
-        public int ModelOriginalPrice { get; set; }
+        public decimal ModelOriginalPrice { get; set; }
 
         [JsonProperty("model_discounted_price")]
-        public int ModelDiscountedPrice { get; set; }
+        public decimal ModelDiscountedPrice { get; set; }
 
         [JsonProperty("wholesale")]
         public bool Wholesale { get; set; }
@@ -55,19 +55,19 @@ namespace WeTools.ShopeeSDK.Model
         public bool MainItem { get; set; }
 
         [JsonProperty("add_on_deal_id")]
-        public int AddOnDealId { get; set; }
+        public long AddOnDealId { get; set; }
 
         [JsonProperty("promotion_type")]
         public string PromotionType { get; set; }
 
         [JsonProperty("promotion_id")]
-        public int PromotionId { get; set; }
+        public long PromotionId { get; set; }
 
         [JsonProperty("order_item_id")]
-        public int OrderItemId { get; set; }
+        public long OrderItemId { get; set; }
 
         [JsonProperty("promotion_group_id")]
-        public int PromotionGroupId { get; set; }
+        public long PromotionGroupId { get; set; }
 
         [JsonProperty("image_info")]
         public ShopeeOrderDetailImageInfoModel ImageInfo { get; set; }
@@ -139,7 +139,7 @@ namespace WeTools.ShopeeSDK.Model
         public object BuyerCpfId { get; set; }
 
         [JsonProperty("buyer_user_id")]
-        public int BuyerUserId { get; set; }
+        public long BuyerUserId { get; set; }
 
         [JsonProperty("buyer_username")]
         public string BuyerUsername { get; set; }
@@ -217,7 +217,7 @@ namespace WeTools.ShopeeSDK.Model
         public string Region { get; set; }
 
         [JsonProperty("reverse_shipping_fee")]
-        public int ReverseShippingFee { get; set; }
+        public decimal ReverseShippingFee { get; set; }
 
         [JsonProperty("ship_by_date")]
         public int ShipByDate { get; set; }
@@ -229,7 +229,7 @@ namespace WeTools.ShopeeSDK.Model
         public bool SplitUp { get; set; }
 
         [JsonProperty("total_amount")]
-        public double TotalAmount { get; set; }
+        public decimal TotalAmount { get; set; }
 
         [JsonProperty("update_time")]
         public int UpdateTime { get; set; }

@@ -8,7 +8,7 @@ namespace WeTools.ShopeeSDK.Model
     public class ShopeeProductUpdatePriceFailureModel
     {
         [JsonProperty("model_id")]
-        public int ModelId { get; set; }
+        public long ModelId { get; set; }
 
         [JsonProperty("failed_reason")]
         public string FailedReason { get; set; }
@@ -17,10 +17,10 @@ namespace WeTools.ShopeeSDK.Model
     public class ShopeeProductUpdatePriceSuccessModel
     {
         [JsonProperty("model_id")]
-        public int ModelId { get; set; }
+        public long ModelId { get; set; }
 
         [JsonProperty("original_price")]
-        public double OriginalPrice { get; set; }
+        public decimal OriginalPrice { get; set; }
     }
 
     public class ShopeeProductUpdatePriceResponseModel

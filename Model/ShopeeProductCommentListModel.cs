@@ -16,7 +16,7 @@ namespace WeTools.ShopeeSDK.Model
     public class ShopeeProductCommentModel
     {
         [JsonProperty("comment_id")]
-        public int CommentId { get; set; }
+        public long CommentId { get; set; }
 
         [JsonProperty("comment")]
         public string Comment { get; set; }
@@ -28,10 +28,10 @@ namespace WeTools.ShopeeSDK.Model
         public string OrderSn { get; set; }
 
         [JsonProperty("item_id")]
-        public int ItemId { get; set; }
+        public long ItemId { get; set; }
 
         [JsonProperty("model_id")]
-        public int ModelId { get; set; }
+        public long ModelId { get; set; }
 
         [JsonProperty("create_time")]
         public int CreateTime { get; set; }

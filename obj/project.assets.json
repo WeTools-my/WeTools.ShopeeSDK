@@ -75,7 +75,8 @@
   },
   "packageFolders": {
     "C:\\Users\\JohoHub\\.nuget\\packages\\": {},
-    "d:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "d:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.4-alpha",
@@ -87,7 +88,8 @@
       "outputPath": "E:\\Git\\Github\\WeTools.ShopeeSDK\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "d:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "d:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\JohoHub\\AppData\\Roaming\\NuGet\\NuGet.Config",

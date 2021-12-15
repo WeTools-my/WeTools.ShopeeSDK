@@ -9,7 +9,7 @@ namespace WeTools.ShopeeSDK.Model
         public string Status { get; set; }
 
         [JsonProperty("shop_category_id")]
-        public int ShopCategoryId { get; set; }
+        public long ShopCategoryId { get; set; }
 
         [JsonProperty("sort_weight")]
         public int SortWeight { get; set; }

@@ -12,7 +12,7 @@ namespace WeTools.ShopeeSDK.Model
         public List<string> ImageUrlList { get; set; }
 
         [JsonProperty("image_id_list")]
-        public List<string> ImageIdList { get; set; }
+        public List<long> ImageIdList { get; set; }
     }
 
     public class ShopeeProductItemBaseInfoDimensionModel
@@ -30,7 +30,7 @@ namespace WeTools.ShopeeSDK.Model
     public class ShopeeProductItemBaseInfoLogisticInfoModel
     {
         [JsonProperty("logistic_id")]
-        public int LogisticId { get; set; }
+        public long LogisticId { get; set; }
 
         [JsonProperty("logistic_name")]
         public string LogisticName { get; set; }
@@ -45,7 +45,7 @@ namespace WeTools.ShopeeSDK.Model
         public double EstimatedShippingFee { get; set; }
 
         [JsonProperty("shipping_fee")]
-        public int? ShippingFee { get; set; }
+        public decimal? ShippingFee { get; set; }
     }
 
     public class ShopeeProductItemBaseInfoPreOrderModel
@@ -66,7 +66,7 @@ namespace WeTools.ShopeeSDK.Model
         public int MaxCount { get; set; }
 
         [JsonProperty("unit_price")]
-        public double UnitPrice { get; set; }
+        public decimal UnitPrice { get; set; }
     }
 
     public class ShopeeProductItemBaseInfoVideoInfoModel
@@ -84,7 +84,7 @@ namespace WeTools.ShopeeSDK.Model
     public class ShopeeProductItemBaseInfoBrandModel
     {
         [JsonProperty("brand_id")]
-        public int BrandId { get; set; }
+        public long BrandId { get; set; }
 
         [JsonProperty("original_brand_name")]
         public string OriginalBrandName { get; set; }
@@ -96,13 +96,13 @@ namespace WeTools.ShopeeSDK.Model
         public string Currency { get; set; }
 
         [JsonProperty("original_price")]
-        public double OriginalPrice { get; set; }
+        public decimal OriginalPrice { get; set; }
 
         [JsonProperty("current_price")]
-        public double CurrentPrice { get; set; }
+        public decimal CurrentPrice { get; set; }
 
         [JsonProperty("sip_item_price")]
-        public double SipItemPrice { get; set; }
+        public decimal SipItemPrice { get; set; }
 
         [JsonProperty("sip_item_price_source")]
         public string SipItemPriceSource { get; set; }
@@ -126,10 +126,10 @@ namespace WeTools.ShopeeSDK.Model
     public class ShopeeProductItemBaseInfoItemModel
     {
         [JsonProperty("item_id")]
-        public object ItemId { get; set; }
+        public long ItemId { get; set; }
 
         [JsonProperty("category_id")]
-        public int CategoryId { get; set; }
+        public long CategoryId { get; set; }
 
         [JsonProperty("item_name")]
         public string ItemName { get; set; }
@@ -177,7 +177,7 @@ namespace WeTools.ShopeeSDK.Model
         public bool HasModel { get; set; }
 
         [JsonProperty("promotion_id")]
-        public int PromotionId { get; set; }
+        public long PromotionId { get; set; }
 
         [JsonProperty("video_info")]
         public List<ShopeeProductItemBaseInfoVideoInfoModel> VideoInfo { get; set; }

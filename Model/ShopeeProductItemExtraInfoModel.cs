@@ -7,7 +7,7 @@ namespace WeTools.ShopeeSDK.Model
     public class ShopeeProductItemExtraInfoItemModel
     {
         [JsonProperty("item_id")]
-        public object ItemId { get; set; }
+        public long ItemId { get; set; }
 
         [JsonProperty("sale")]
         public int Sale { get; set; }

@@ -7,7 +7,7 @@ namespace WeTools.ShopeeSDK.Model
     public class ShopeeProductItemModelImageModel
     {
         [JsonProperty("image_id")]
-        public string ImageId { get; set; }
+        public long ImageId { get; set; }
 
         [JsonProperty("image_url")]
         public string ImageUrl { get; set; }
@@ -49,19 +49,19 @@ namespace WeTools.ShopeeSDK.Model
     public class ShopeeProductItemModelPriceInfoModel
     {
         [JsonProperty("current_price")]
-        public double CurrentPrice { get; set; }
+        public decimal CurrentPrice { get; set; }
 
         [JsonProperty("original_price")]
-        public double OriginalPrice { get; set; }
+        public decimal OriginalPrice { get; set; }
 
         [JsonProperty("inflated_price_of_current_price")]
-        public double InflatedPriceOfCurrentPrice { get; set; }
+        public decimal InflatedPriceOfCurrentPrice { get; set; }
 
         [JsonProperty("inflated_price_of_original_price")]
-        public double InflatedPriceOfOriginalPrice { get; set; }
+        public decimal InflatedPriceOfOriginalPrice { get; set; }
 
         [JsonProperty("sip_item_price")]
-        public double SipItemPrice { get; set; }
+        public decimal SipItemPrice { get; set; }
 
         [JsonProperty("sip_item_price_source")]
         public string SipItemPriceSource { get; set; }
@@ -79,10 +79,10 @@ namespace WeTools.ShopeeSDK.Model
     public class ShopeeProductItemModelInfoModel
     {
         [JsonProperty("model_id")]
-        public object ModelId { get; set; }
+        public long ModelId { get; set; }
 
         [JsonProperty("promotion_id")]
-        public int PromotionId { get; set; }
+        public long PromotionId { get; set; }
 
         [JsonProperty("tier_index")]
         public List<int> TierIndex { get; set; }
