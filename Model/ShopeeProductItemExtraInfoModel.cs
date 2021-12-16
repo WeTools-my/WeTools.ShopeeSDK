@@ -19,7 +19,7 @@ namespace WeTools.ShopeeSDK.Model
         public int Likes { get; set; }
 
         [JsonProperty("rating_star")]
-        public int RatingStar { get; set; }
+        public double RatingStar { get; set; }
 
         [JsonProperty("comment_count")]
         public int CommentCount { get; set; }
