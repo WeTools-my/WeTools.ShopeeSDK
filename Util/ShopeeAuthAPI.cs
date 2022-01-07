@@ -19,12 +19,27 @@ namespace WeTools.ShopeeSDK.Util
 
             string action = "token/get";
             string url = GetRequestUrl(action);
-            var data = MakeData(new {
-                code,
-                partner_id= _basic.PartnerId,
-                shop_id= shopId,
-                main_account_id= mainAccountId
-            });
+
+            string? data = null;
+            if (mainAccountId==0)
+            {
+                data = MakeData(new
+                {
+                    code,
+                    partner_id = _basic.PartnerId,
+                    shop_id = shopId
+                });
+            }
+            else
+            {
+                data = MakeData(new
+                {
+                    code,
+                    partner_id = _basic.PartnerId,
+                    shop_id = shopId,
+                    main_account_id= mainAccountId
+                });
+            }
 
             var resp= _basic.Web.DoPost(url, data);
 

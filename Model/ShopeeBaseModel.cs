@@ -11,11 +11,44 @@ namespace WeTools.ShopeeSDK.Model
         /// </summary>
         public string Error { get; set; }
 
+        private string _message = null;
+        private string _msg = null;
+
         /// <summary>
         /// error message for error response.
         /// </summary>
-        public string Message { get; set; }
+        public string Message { 
+            get {
 
+                return _message;
+            
+            }
+            set
+            {
+                if (!string.IsNullOrWhiteSpace(value))
+                {
+                  _msg=  _message = value;
+                }
+                
+            }
+        }
+
+        public string Msg {
+            get
+            {
+
+                return _msg;
+
+            }
+            set
+            {
+                if (!string.IsNullOrWhiteSpace(value))
+                {
+                    _msg = _message = value;
+                }
+
+            }
+        }
         /// <summary>
         /// request id for api request.
         /// </summary>
