@@ -154,7 +154,7 @@ namespace WeTools.ShopeeSDK.Model
         public bool Cod { get; set; }
 
         [JsonProperty("create_time")]
-        public int CreateTime { get; set; }
+        public long CreateTime { get; set; }
 
         [JsonProperty("currency")]
         public string Currency { get; set; }
@@ -190,7 +190,7 @@ namespace WeTools.ShopeeSDK.Model
         public string Note { get; set; }
 
         [JsonProperty("note_update_time")]
-        public int NoteUpdateTime { get; set; }
+        public long NoteUpdateTime { get; set; }
 
         [JsonProperty("order_sn")]
         public string OrderSn { get; set; }
@@ -202,13 +202,13 @@ namespace WeTools.ShopeeSDK.Model
         public List<ShopeeOrderDetailPackageModel> PackageList { get; set; }
 
         [JsonProperty("pay_time")]
-        public int PayTime { get; set; }
+        public long PayTime { get; set; }
 
         [JsonProperty("payment_method")]
         public string PaymentMethod { get; set; }
 
         [JsonProperty("pickup_done_time")]
-        public int PickupDoneTime { get; set; }
+        public long PickupDoneTime { get; set; }
 
         [JsonProperty("recipient_address")]
         public ShopeeOrderDetailRecipientAddressModel RecipientAddress { get; set; }
@@ -220,7 +220,7 @@ namespace WeTools.ShopeeSDK.Model
         public decimal ReverseShippingFee { get; set; }
 
         [JsonProperty("ship_by_date")]
-        public int ShipByDate { get; set; }
+        public long ShipByDate { get; set; }
 
         [JsonProperty("shipping_carrier")]
         public string ShippingCarrier { get; set; }
@@ -232,7 +232,7 @@ namespace WeTools.ShopeeSDK.Model
         public decimal TotalAmount { get; set; }
 
         [JsonProperty("update_time")]
-        public int UpdateTime { get; set; }
+        public long UpdateTime { get; set; }
     }
 
     public class ShopeeOrderDetailListResponseModel
