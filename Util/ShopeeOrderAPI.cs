@@ -24,7 +24,7 @@ namespace WeTools.ShopeeSDK.Util
         /// <param name="order_status">The order_status filter for retriveing orders and each one only every request. Available value: UNPAID/READY_TO_SHIP/PROCESSED/SHIPPED/COMPLETED/IN_CANCEL/CANCELLED/INVOICE_PENDING</param>
         /// <param name="response_optional_fields">Optional fields in response. Available value: order_status.</param>
         /// <returns>ShopeeOrderListModel</returns>
-        public ShopeeOrderListModel GetOrderList( int time_from,int time_to,int page_size, string time_range_field = "create_time", string cursor="",string order_status="",string response_optional_fields= "order_status")
+        public ShopeeOrderListModel GetOrderList( long time_from, long time_to,int page_size, string cursor = "", string order_status = "", string time_range_field = "create_time",string response_optional_fields= "order_status")
         {
             string action = "get_order_list";
             var queryString = new StringBuilder();

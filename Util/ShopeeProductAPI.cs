@@ -12,6 +12,13 @@ namespace WeTools.ShopeeSDK.Util
             ApiType = "product";
             _basic = basic;
         }
+
+        public string GetCategory(string language="en")
+        {
+            string action = "get_category";
+
+            return "";
+        }
         /// <summary>
         /// Use this call to get a list of items.
         /// https://open.shopee.com/documents?module=89&type=1&id=614&version=2
