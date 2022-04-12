@@ -12,6 +12,8 @@
         private ShopeeShopCategoryAPI? _shopCategory=null;
 
         private ShopeeOrderAPI? _order=null;
+        private ShopeeReturnAPI? _return=null;
+
 
         public ShopeeAPIBasic? Basic { get; set; }
 
@@ -85,5 +87,15 @@
             set => _order = value;
         }
 
+        public ShopeeReturnAPI? Returns { get 
+            {
+                if (_return is null)
+                {
+                    _return = new ShopeeReturnAPI(Basic);
+                }
+                return _return;
+            }
+            set =>_return = value;
+        }
     }
 }
