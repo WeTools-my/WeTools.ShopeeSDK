@@ -11,7 +11,7 @@
     <FileVersion>1.0.0</FileVersion>
     <PackageIcon>wetools.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Version>1.0.10-alpha</Version>
+    <Version>1.0.11-alpha</Version>
     <PackageProjectUrl>https://muker.cc</PackageProjectUrl>
   </PropertyGroup>
 
