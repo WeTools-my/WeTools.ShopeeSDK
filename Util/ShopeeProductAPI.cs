@@ -266,5 +266,21 @@ namespace WeTools.ShopeeSDK.Util
 
             return ParseData<ShopeeProductCommentListModel>(resp);
         }
+
+        public (ShopeeProductCommentReplyResultModel,string) ReplyComment(List<ShopeeProductCommentReplyModel> commentList)
+        {
+            string action = "reply_comment";
+            string url = GetRequestUrl(action, SignTypeEnum.Shop, $"&access_token={_basic.AccessToken}&shop_id={_basic.ShopId}");
+
+            var data = MakeData(new
+            {
+                comment_list = commentList
+            });
+
+            var resp = _basic.Web.DoPost(url, data);
+
+            return (ParseData<ShopeeProductCommentReplyResultModel>(resp),resp);
+        }
+
     }
 }

@@ -139,7 +139,7 @@ namespace WeTools.ShopeeSDK.Model
         public object BuyerCpfId { get; set; }
 
         [JsonProperty("buyer_user_id")]
-        public long BuyerUserId { get; set; }
+        public object BuyerUserId { get; set; }
 
         [JsonProperty("buyer_username")]
         public string BuyerUsername { get; set; }
