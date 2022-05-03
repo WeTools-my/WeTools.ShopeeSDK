@@ -45,7 +45,7 @@ namespace WeTools.ShopeeSDK.Model
         [JsonProperty("hidden")]
         public bool Hidden { get; set; }
 
-        [JsonProperty("cmt_reply")]
+        [JsonProperty("comment_reply")]
         public ShopeeProductCommentCmtReplyModel CmtReply { get; set; }
     }
 
