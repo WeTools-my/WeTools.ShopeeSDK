@@ -79,7 +79,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.0.14-alpha",
+    "version": "1.0.15-alpha",
     "restore": {
       "projectUniqueName": "E:\\Git\\Github\\WeTools.ShopeeSDK\\WeTools.ShopeeSDK.csproj",
       "projectName": "WeTools.ShopeeSDK",
