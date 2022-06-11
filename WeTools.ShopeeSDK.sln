@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeTools.ShopeeSDK", "ShopeeSDK\WeTools.ShopeeSDK.csproj", "{FF775184-857A-42AD-B067-993783FB7FF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeTools.ShopeeSDK2", "ShopeeSDK2\WeTools.ShopeeSDK2\WeTools.ShopeeSDK2.csproj", "{C383E938-9995-4F71-87D2-D15B35609C2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeTools.ShopeeSDK2", "ShopeeSDK2\WeTools.ShopeeSDK2\WeTools.ShopeeSDK2.csproj", "{C383E938-9995-4F71-87D2-D15B35609C2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

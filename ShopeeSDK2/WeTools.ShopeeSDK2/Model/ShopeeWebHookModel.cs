@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 
 namespace WeTools.ShopeeSDK.Model
@@ -12,9 +13,31 @@ namespace WeTools.ShopeeSDK.Model
 
         public long TimeStamp { get; set; }
 
+        internal JObject ModelObject { get; set; }
+
+        internal T GetModel<T>()
+        {
+            if (ModelObject==null) return default;
+            
+            return ModelObject.ToObject<T>();
+        }
     }
 
-   public class ShopeeWebHookAuthModel:ShopeeWebHookBaseModel
+    public class ShopeeWebHookTestModel:ShopeeWebHookBaseModel
+    {
+        public ShopeeWebHookTestData Data { get; set; }
+    }
+
+    public class ShopeeWebHookTestData
+    {
+        [JsonProperty("verify_info")]
+        public string VerifyInfo { get; set; }
+    }
+    /// <summary>
+    /// shop authorization/deauthorization for partners 
+    /// code  1 & 2
+    /// </summary>
+    public class ShopeeWebHookAuthModel:ShopeeWebHookBaseModel
     {
         public int Success { get; set; }
 
@@ -22,6 +45,10 @@ namespace WeTools.ShopeeSDK.Model
         public string Extra { get; set; }
     }
 
+    /// <summary>
+    /// brand register result
+    /// code 13
+    /// </summary>
     public class ShopeeWebHookBrandRegisterModel : ShopeeWebHookBaseModel
     {
         [JsonProperty("register_brand")]
@@ -51,6 +78,10 @@ namespace WeTools.ShopeeSDK.Model
         public string Reason { get; set; }
     }
 
+    /// <summary>
+    /// openapi authorization expiry push 
+    /// code 12
+    /// </summary>
     public class ShopeeWebHookTokenExpiryModel : ShopeeWebHookBaseModel
     {
         public ShopeeWebHookTokenExpiryData Data { get; set; }
@@ -74,6 +105,10 @@ namespace WeTools.ShopeeSDK.Model
         public List<long> ShopExpireSoon { get; set; }
     }
 
+    /// <summary>
+    /// order status update push
+    /// code 3
+    /// </summary>
     public class ShopeeWebHookOrderStatusModel : ShopeeWebHookBaseModel
     {
         public ShopeeWebHookOrderStatusData Data { get; set; }
@@ -88,6 +123,10 @@ namespace WeTools.ShopeeSDK.Model
         public long UpdateTime { get; set; }
     }
 
+    /// <summary>
+    /// trackingno push
+    /// code 4
+    /// </summary>
     public class ShopeeWebHookTrackingNoModel : ShopeeWebHookBaseModel
     {
         public ShopeeWebHookTrackingNoData Data { get; set; }
@@ -100,6 +139,10 @@ namespace WeTools.ShopeeSDK.Model
         public string TrackingNo { get; set; }
     }
 
+    /// <summary>
+    /// shopee updates 
+    /// code 5
+    /// </summary>
     public class ShopeeWebHookShopeeUpdateModel : ShopeeWebHookBaseModel
     {
         public ShopeeWebHookShopeeUpdateData Data { get; set; }
@@ -123,6 +166,10 @@ namespace WeTools.ShopeeSDK.Model
 
     }
 
+    /// <summary>
+    /// banned item push
+    /// code 6
+    /// </summary>
     public class ShopeeWebHookBannedItemModel : ShopeeWebHookBaseModel
     {
         public ShopeeWebHookBannedItemData Data { get; set; }
@@ -156,7 +203,10 @@ namespace WeTools.ShopeeSDK.Model
 
     }
 
-
+    /// <summary>
+    /// item promotion push & Promotion Update push
+    /// code 7 & 9 
+    /// </summary>
     public class ShopeeWebHookItemPromotionModel : ShopeeWebHookBaseModel
     {
         public ShopeeWebHookItemPromotionData Data { get; set; }
@@ -193,7 +243,10 @@ namespace WeTools.ShopeeSDK.Model
         public int ReservedStock { get; set; }
     }
 
-
+    /// <summary>
+    /// reserved stock change push
+    /// code 8
+    /// </summary>
     public class ShopeeWebHookReservedStockModel : ShopeeWebHookBaseModel
     {
         public ShopeeWebHookReservedStockData Data { get; set; }
@@ -235,6 +288,10 @@ namespace WeTools.ShopeeSDK.Model
         public int Old { get; set; }
     }
 
+    /// <summary>
+    /// video upload push
+    /// code 11
+    /// </summary>
     public class ShopeeWebHookVideoModel : ShopeeWebHookBaseModel
     {
         [JsonProperty("sharding_key")]
@@ -285,7 +342,10 @@ namespace WeTools.ShopeeSDK.Model
         public string VideoUrl { get; set; }
     }
 
-
+    /// <summary>
+    /// webchat push
+    /// code 10
+    /// </summary>
     public class ShopeeWebHookWebChatModel : ShopeeWebHookBaseModel
     {
         public ShopeeWebHookWebChatData Data { get; set; }

@@ -59,7 +59,7 @@ namespace WeTools.ShopeeSDK.Util
             IRestResponse response = client.Execute(request);
             return response.Content;
         }
-        public string DoPost(string url, IDictionary<string, string> textParams, IDictionary<string, string>? headerParams)
+        public string DoPost(string url, IDictionary<string, string> textParams, IDictionary<string, string> headerParams)
         {
             var client = new RestClient(url);
             var request = new RestRequest(Method.POST);
@@ -96,7 +96,7 @@ namespace WeTools.ShopeeSDK.Util
             return DoGet(url, textParams, null);
         }
 
-        public string DoGet(string url, IDictionary<string, string> textParams, IDictionary<string, string>? headerParams)
+        public string DoGet(string url, IDictionary<string, string> textParams, IDictionary<string, string> headerParams)
         {
             if (textParams != null && textParams.Count > 0)
             {
@@ -313,7 +313,7 @@ namespace WeTools.ShopeeSDK.Util
             return query.ToString();
         }
 
-        public static string? BuildQueryForShopee(IDictionary<string, string> parameters)
+        public static string BuildQueryForShopee(IDictionary<string, string> parameters)
         {
             if (parameters == null || parameters.Count == 0)
             {

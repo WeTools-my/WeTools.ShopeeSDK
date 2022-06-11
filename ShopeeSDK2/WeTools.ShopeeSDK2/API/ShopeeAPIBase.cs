@@ -6,14 +6,19 @@ namespace WeTools.ShopeeSDK.API
 {
     public class ShopeeAPIBase
     {
-        public ShopeeAPIBase(ShopeePublicParams publicParams, WebUtils web)
+        public ShopeeAPIBase(ShopeeBasicParams basicParams)
         {
-            _basic = publicParams;
+            _basic = basicParams;
+        }
+
+        public ShopeeAPIBase(ShopeeBasicParams basicParams, WebUtils web)
+        {
+            _basic = basicParams;
             _web = web;
         }
 
         internal WebUtils _web { get; set; }
-        internal ShopeePublicParams _basic { get; set; }
+        internal ShopeeBasicParams _basic { get; set; }
 
         internal string ApiCategory { get; set; }
 

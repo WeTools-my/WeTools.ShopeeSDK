@@ -1,0 +1,10 @@
+E:\Git\Github\WeTools.ShopeeSDK\ShopeeSDK2\WeTools.ShopeeSDK2\obj\Debug\netstandard2.0\WeTools.ShopeeSDK2.csproj.AssemblyReference.cache
+E:\Git\Github\WeTools.ShopeeSDK\ShopeeSDK2\WeTools.ShopeeSDK2\obj\Debug\netstandard2.0\WeTools.ShopeeSDK2.GeneratedMSBuildEditorConfig.editorconfig
+E:\Git\Github\WeTools.ShopeeSDK\ShopeeSDK2\WeTools.ShopeeSDK2\obj\Debug\netstandard2.0\WeTools.ShopeeSDK2.AssemblyInfoInputs.cache
+E:\Git\Github\WeTools.ShopeeSDK\ShopeeSDK2\WeTools.ShopeeSDK2\obj\Debug\netstandard2.0\WeTools.ShopeeSDK2.AssemblyInfo.cs
+E:\Git\Github\WeTools.ShopeeSDK\ShopeeSDK2\WeTools.ShopeeSDK2\obj\Debug\netstandard2.0\WeTools.ShopeeSDK2.csproj.CoreCompileInputs.cache
+E:\Git\Github\WeTools.ShopeeSDK\ShopeeSDK2\WeTools.ShopeeSDK2\bin\Debug\netstandard2.0\WeTools.ShopeeSDK2.deps.json
+E:\Git\Github\WeTools.ShopeeSDK\ShopeeSDK2\WeTools.ShopeeSDK2\bin\Debug\netstandard2.0\WeTools.ShopeeSDK2.dll
+E:\Git\Github\WeTools.ShopeeSDK\ShopeeSDK2\WeTools.ShopeeSDK2\bin\Debug\netstandard2.0\WeTools.ShopeeSDK2.pdb
+E:\Git\Github\WeTools.ShopeeSDK\ShopeeSDK2\WeTools.ShopeeSDK2\obj\Debug\netstandard2.0\WeTools.ShopeeSDK2.dll
+E:\Git\Github\WeTools.ShopeeSDK\ShopeeSDK2\WeTools.ShopeeSDK2\obj\Debug\netstandard2.0\WeTools.ShopeeSDK2.pdb

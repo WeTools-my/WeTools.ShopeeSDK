@@ -8,7 +8,7 @@ namespace WeTools.ShopeeSDK.API
     public class ShopeeProductAPI : ShopeeAPIBase
     {
         
-        public ShopeeProductAPI(ShopeePublicParams publicParams,WebUtils web) : base(publicParams,web)
+        public ShopeeProductAPI(ShopeeBasicParams basicParams, WebUtils web) : base(basicParams, web)
         {
             ApiCategory = "product";
         }

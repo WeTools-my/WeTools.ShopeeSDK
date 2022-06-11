@@ -15,7 +15,7 @@ namespace WeTools.ShopeeSDK.Model
         [Description("Tracking No push")]
         TrackingNo,
         [Description("Shopee updates")]
-        Shopee,
+        ShopeeUpdate,
         [Description("Banned Item Push")]
         Banned,
         [Description("Item Promotion Push")]

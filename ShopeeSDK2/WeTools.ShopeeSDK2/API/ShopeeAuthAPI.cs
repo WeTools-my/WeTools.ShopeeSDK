@@ -5,7 +5,7 @@ namespace WeTools.ShopeeSDK.API
 {
     public class ShopeeAuthAPI : ShopeeAPIBase
     {
-        public ShopeeAuthAPI(ShopeePublicParams publicParams, WebUtils web) : base(publicParams,web)
+        public ShopeeAuthAPI(ShopeeBasicParams basicParams, WebUtils web) : base(basicParams, web)
         {
             ApiCategory = "auth";
         }

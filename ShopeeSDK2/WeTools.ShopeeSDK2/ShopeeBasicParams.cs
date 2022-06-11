@@ -1,6 +1,6 @@
 ﻿namespace WeTools.ShopeeSDK
 {
-    public class ShopeePublicParams
+    public class ShopeeBasicParams
     {
         public long PartnerId { get; set; }
         public string PartnerKey { get; set; }
