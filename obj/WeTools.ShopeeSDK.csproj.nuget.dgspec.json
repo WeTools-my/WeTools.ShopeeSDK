@@ -5,7 +5,7 @@
   },
   "projects": {
     "E:\\Git\\Github\\WeTools.ShopeeSDK\\WeTools.ShopeeSDK.csproj": {
-      "version": "1.0.15-alpha",
+      "version": "1.0.16-alpha",
       "restore": {
         "projectUniqueName": "E:\\Git\\Github\\WeTools.ShopeeSDK\\WeTools.ShopeeSDK.csproj",
         "projectName": "WeTools.ShopeeSDK",
@@ -27,6 +27,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -69,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
