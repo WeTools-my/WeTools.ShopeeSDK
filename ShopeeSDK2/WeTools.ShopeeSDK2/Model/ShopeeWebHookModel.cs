@@ -135,8 +135,14 @@ namespace WeTools.ShopeeSDK.Model
     public class ShopeeWebHookTrackingNoData
     {
         public string OrderSn { get; set; }
-
+        [JsonProperty("tracking_no")]
         public string TrackingNo { get; set; }
+
+        [JsonProperty("forder_id")]
+        public string ForderId { get; set; }
+
+        [JsonProperty("package_number")]
+        public string PackageNumber { get; set; }
     }
 
     /// <summary>
