@@ -1,2 +1,6 @@
 
 bin/
+obj/Debug/netstandard2.1/WeTools.ShopeeSDK.dll
+obj/Debug/netstandard2.1/WeTools.ShopeeSDK.pdb
+*.dll
+*.dll

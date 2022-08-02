@@ -69,7 +69,7 @@ namespace WeTools.ShopeeSDK.Model
         public string TextReason;
 
         [JsonProperty("return_sn")]
-        public long ReturnSn;
+        public string ReturnSn;
 
         [JsonProperty("refund_amount")]
         public decimal RefundAmount;
