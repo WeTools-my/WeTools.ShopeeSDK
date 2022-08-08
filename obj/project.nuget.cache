@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "wkz0gfjHfbujiYyJVuTJrKrj8JfrtaM9wKSRARjE5vnwRYJmpWFunxLWKhXMscyxMgYcCCVHPvYXUSMZ31j7YQ==",
+  "success": true,
+  "projectFilePath": "E:\\Git\\Github\\WeTools.ShopeeSDK\\WeTools.ShopeeSDK.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JohoHub\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\JohoHub\\.nuget\\packages\\restsharp\\106.13.0\\restsharp.106.13.0.nupkg.sha512"
+  ],
+  "logs": []
+}

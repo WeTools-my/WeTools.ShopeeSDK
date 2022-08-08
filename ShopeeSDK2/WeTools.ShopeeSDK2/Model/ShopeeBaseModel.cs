@@ -67,4 +67,7 @@ namespace WeTools.ShopeeSDK.Model
             return !string.IsNullOrWhiteSpace(Error);
         }
     }
+
+
+    
 }
