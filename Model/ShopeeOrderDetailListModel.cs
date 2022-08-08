@@ -214,7 +214,20 @@ namespace WeTools.ShopeeSDK.Model
         public List<ShopeeOrderDetailPackageModel> PackageList { get; set; }
 
         [JsonProperty("pay_time")]
-        public long PayTime { get; set; }
+        public string PayTime { get; set; }
+
+        [JsonIgnore]
+        public long PayTimeLong { 
+            get
+            {
+                if (string.IsNullOrWhiteSpace(PayTime))
+                {
+                    return 0;
+                }
+
+                return long.Parse(PayTime);
+            }
+        }
 
         [JsonProperty("payment_method")]
         public string PaymentMethod { get; set; }
