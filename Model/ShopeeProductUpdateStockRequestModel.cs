@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace WeTools.ShopeeSDK.Model
 {
@@ -9,6 +10,10 @@ namespace WeTools.ShopeeSDK.Model
 
         [JsonProperty("normal_stock")]
         public int NormalStock { get; set; }
+
+        [JsonProperty("seller_stock")]
+
+        public List<ShopeeProductUpdateStockSellerStockModel> SellerStock { get; set; }
     }
 
     public class ShopeeProductUpdateStockSellerStockModel
