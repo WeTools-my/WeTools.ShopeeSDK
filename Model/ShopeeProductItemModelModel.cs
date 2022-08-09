@@ -44,6 +44,9 @@ namespace WeTools.ShopeeSDK.Model
 
         [JsonProperty("reserved_stock")]
         public int ReservedStock { get; set; }
+
+        [JsonProperty("stock_location_id")]
+        public string StockLocationId { get; set; }
     }
 
     public class ShopeeProductItemModelPriceInfoModel
@@ -65,6 +68,9 @@ namespace WeTools.ShopeeSDK.Model
 
         [JsonProperty("sip_item_price_source")]
         public string SipItemPriceSource { get; set; }
+
+        [JsonProperty("currency")]
+        public string Currency { get; set; }
     }
 
     public class ShopeeProductItemModelPreOrderModel
@@ -74,6 +80,37 @@ namespace WeTools.ShopeeSDK.Model
 
         [JsonProperty("days_to_ship")]
         public int DaysToShip { get; set; }
+    }
+
+    public class ShopeeProductItemModelStockInfoV2Model
+    {
+        [JsonProperty("summary_info")]
+        public ShopeeProductItemModelStockInfoV2SummaryInfoModel SummaryInfo { get; set; }
+
+        [JsonProperty("seller_stock")]
+        public List<ShopeeProductItemModelStockInfoV2StockModel> SellerStock { get; set; }
+
+        [JsonProperty("shopee_stock")]
+        public List<ShopeeProductItemModelStockInfoV2StockModel> ShopeeStock { get; set; }
+
+    }
+
+    public class ShopeeProductItemModelStockInfoV2StockModel
+    {
+        [JsonProperty("location_id")]
+        public string LocationId { get; set; }
+
+        [JsonProperty("stock")]
+        public int Stock { get; set; }
+    }
+
+    public class ShopeeProductItemModelStockInfoV2SummaryInfoModel
+    {
+        [JsonProperty("total_reserved_stock")]
+        public int TotalReservedStock { get; set; }
+
+        [JsonProperty("total_available_stock")]
+        public int TotalAvailableStock { get; set; }
     }
 
     public class ShopeeProductItemModelInfoModel
@@ -98,6 +135,9 @@ namespace WeTools.ShopeeSDK.Model
 
         [JsonProperty("pre_order")]
         public ShopeeProductItemModelPreOrderModel PreOrder { get; set; }
+
+        [JsonProperty("stock_info_v2")]
+        public List<ShopeeProductItemModelStockInfoV2Model> StockInfo2 { get; set; }
     }
 
     public class ShopeeProductItemModelResponseModel

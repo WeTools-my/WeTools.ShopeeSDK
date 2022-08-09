@@ -106,12 +106,21 @@ namespace WeTools.ShopeeSDK.Model
 
         [JsonProperty("sip_item_price_source")]
         public string SipItemPriceSource { get; set; }
+
+        [JsonProperty("inflated_price_of_original_price")]
+        public decimal InflatedPriceOfOriginalPrice { get; set; }
+
+        [JsonProperty("inflated_price_of_current_price")]
+        public decimal InflatedPriceOfCurrentPrice { get; set; }
     }
 
     public class ShopeeProductItemBaseInfoStockInfoModel
     {
         [JsonProperty("stock_type")]
         public int StockType { get; set; }
+
+        [JsonProperty("stock_location_id")]
+        public string StockLocationId { get; set; }
 
         [JsonProperty("current_stock")]
         public int CurrentStock { get; set; }
@@ -121,6 +130,81 @@ namespace WeTools.ShopeeSDK.Model
 
         [JsonProperty("reserved_stock")]
         public int ReservedStock { get; set; }
+    }
+
+    public class ShopeeProductItemBaseInfoStockInfoV2Model
+    {
+        [JsonProperty("summary_info")]
+        public ShopeeProductItemBaseInfoStockInfoV2SummaryInfoModel SummaryInfo { get; set; }
+
+        [JsonProperty("seller_stock")]
+        public List<ShopeeProductItemBaseInfoStockInfoV2StockModel> SellerStock { get; set; }
+
+        [JsonProperty("shopee_stock")]
+        public List<ShopeeProductItemBaseInfoStockInfoV2StockModel> ShopeeStock { get; set; }
+
+    }
+
+    public class ShopeeProductItemBaseInfoStockInfoV2StockModel
+    {
+        [JsonProperty("location_id")]
+        public string LocationId { get; set; }
+
+        [JsonProperty("stock")]
+        public int Stock { get; set; }
+    }
+
+    public class ShopeeProductItemBaseInfoStockInfoV2SummaryInfoModel
+    {
+        [JsonProperty("total_reserved_stock")]
+        public int TotalReservedStock { get; set; }
+
+        [JsonProperty("total_available_stock")]
+        public int TotalAvailableStock { get; set; }
+    }
+
+    public class ShopeeProductItemBaseInfoAttributeModel
+    {
+        [JsonProperty("attribute_id")]
+        public long AttributeId { get; set; }
+
+        [JsonProperty("original_attribute_name")]
+        public string OriginalAttributeName { get; set; }
+
+        [JsonProperty("is_mandatory")]
+        public bool IsMandatory { get; set; }
+
+        [JsonProperty("attribute_value_list")]
+        public List<ShopeeProductItemBaseInfoAttributeValueModel> AttributeValueList { get; set; }
+    }
+
+    public class ShopeeProductItemBaseInfoAttributeValueModel
+    {
+        [JsonProperty("value_id")]
+        public long ValueId { get; set; }
+
+        [JsonProperty("original_value_name")]
+        public string OriginalValueName { get; set; }
+
+
+        [JsonProperty("value_unit")]
+        public string ValueUnit { get; set; }
+    }
+
+    public class ShopeeProductItemBaseInfoComplaintPolicyModel
+    {
+        [JsonProperty("warranty_time")]
+        public string WarrantyTime { get; set; }
+
+        [JsonProperty("exclude_entrepreneur_warranty")]
+        public bool ExcludeEntrepreneurWarranty { get; set; }
+
+
+        [JsonProperty("complaint_address_id")]
+        public long ComplaintAddressId { get; set; }
+
+        [JsonProperty("additional_information")]
+        public string AdditionalInformation { get; set; }
     }
 
     public class ShopeeProductItemBaseInfoItemModel
@@ -193,12 +277,71 @@ namespace WeTools.ShopeeSDK.Model
 
         [JsonProperty("stock_info")]
         public List<ShopeeProductItemBaseInfoStockInfoModel> StockInfo { get; set; }
+
+        [JsonProperty("attribute_list")]
+        public List<ShopeeProductItemBaseInfoAttributeModel> AttributeList { get; set; }
+
+        [JsonProperty("complaint_policy")]
+        public ShopeeProductItemBaseInfoComplaintPolicyModel ComplaintPolicy { get; set; }
+
+        public object TaxInfo { get; set; }
+
+        [JsonProperty("stock_info_v2")]
+        public List<ShopeeProductItemBaseInfoStockInfoV2Model> StockInfo2 { get; set; }
+    }
+
+    public class ShopeeProductItemBaseInfoDescriptionModel
+    {
+        [JsonProperty("extended_description")]
+        public ShopeeProductItemBaseInfoExtendedDescriptionModel ExtendedDescription { get; set; }
+    }
+
+    public class ShopeeProductItemBaseInfoExtendedDescriptionModel
+    {
+        [JsonProperty("field_list")]
+        public List<ShopeeProductItemBaseInfoExtendedDescriptionFieldModel> FieldList { get; set; }
+    }
+
+    public class ShopeeProductItemBaseInfoExtendedDescriptionFieldModel
+    {
+        [JsonProperty("text")]
+        public string FieldType { get; set; }
+
+
+        [JsonProperty("text")]
+        public string Text { get; set; }
+
+
+    }
+
+    public class ShopeeProductItemBaseInfoExtendedDescriptionFieldImageInfoModel
+    {
+        [JsonProperty("image_id")]
+        public string ImageId { get; set; }
+
+
+        [JsonProperty("image_url")]
+        public string ImageUrl { get; set; }
+
+
     }
 
     public class ShopeeProductItemBaseInfoResponseModel
     {
         [JsonProperty("item_list")]
         public List<ShopeeProductItemBaseInfoItemModel> ItemList { get; set; }
+
+        /// <summary>
+        /// Type of description : values: See Data Definition- description_type (normal , extended).
+        /// </summary>
+        [JsonProperty("description_type")]
+        public string DescriptionType { get; set; }
+
+        /// <summary>
+        /// New description field. Only whitelist sellers can use it.
+        /// </summary>
+        [JsonProperty("description_info")]
+        public ShopeeProductItemBaseInfoDescriptionModel DescriptionInfo { get; set; }
     }
 
     public class ShopeeProductItemBaseInfoModel:ShopeeBaseModel

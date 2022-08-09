@@ -19,8 +19,14 @@ namespace WeTools.ShopeeSDK.Model
         [JsonProperty("model_id")]
         public long ModelId { get; set; }
 
-        [JsonProperty("original_price")]
-        public double OriginalPrice { get; set; }
+        [JsonProperty("normal_stock")]
+        public int NormalStock { get; set; }
+
+        [JsonProperty("location_id")]
+        public string LocationId { get; set; }
+
+        [JsonProperty("stock")]
+        public int Stock { get; set; }
     }
 
     public class ShopeeProductUpdateStockResponseModel
