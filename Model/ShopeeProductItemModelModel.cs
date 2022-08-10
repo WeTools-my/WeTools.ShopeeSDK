@@ -137,7 +137,7 @@ namespace WeTools.ShopeeSDK.Model
         public ShopeeProductItemModelPreOrderModel PreOrder { get; set; }
 
         [JsonProperty("stock_info_v2")]
-        public List<ShopeeProductItemModelStockInfoV2Model> StockInfo2 { get; set; }
+        public ShopeeProductItemModelStockInfoV2Model StockInfo2 { get; set; }
     }
 
     public class ShopeeProductItemModelResponseModel

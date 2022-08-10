@@ -287,7 +287,7 @@ namespace WeTools.ShopeeSDK.Model
         public object TaxInfo { get; set; }
 
         [JsonProperty("stock_info_v2")]
-        public List<ShopeeProductItemBaseInfoStockInfoV2Model> StockInfo2 { get; set; }
+        public ShopeeProductItemBaseInfoStockInfoV2Model StockInfo2 { get; set; }
     }
 
     public class ShopeeProductItemBaseInfoDescriptionModel
